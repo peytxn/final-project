@@ -67,6 +67,6 @@ button {
     font-family: Oswald, sans-serif;
     background-color: #B2C9E4;
     color: white;
-    border: none;
+    border-radius: 50px;
     padding: 10px 20px;
 }
