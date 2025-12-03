@@ -5,46 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peyton Blanchard's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <header>
-    <h1><img src="logo.png" alt="logo"></h1>
-    <nav>
+    <h1 class="left"><img src="logo.png" alt="logo" id="logo"></h1>
+    <nav class="right">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio<a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<body>
-    <h1> <img src="Me.jpg" alt="Picture of Me">
+<body class="center">
+    <h1> <img src="Me.png" alt="Picture of Me" id="portrait">
     </h1>
-    <h1> Hi, I'm Peyton Blanchard</h1>
-    <h2>Dual B.A. in Information Science + Game Design & Development</h2>
-    <p> I design and build interactive experiences across games and the web</p>
-    <button>View My Work</button>
+    <h1 id="home-h1"> Hi, I'm Peyton Blanchard</h1>
+    <h2 id="home-h2">Dual B.A. in Information Science + Game Design & Development</h2>
+    <p id="home-p"> I design and build interactive experiences across games and the web</p>
+    <a href="portfolio.html">
+        <button>View My Work</button>
+    </a>
 </body>
 
 <footer>
     <p>
-        <a href=“https://www.linkedin.com/in/peyton-blanchard-a634ba26a”>
-            <img src=“LinkedIn.png” alt=“LinkedIn”>
+        <a href="https://www.linkedin.com/in/peyton-blanchard-a634ba26a">
+            <img src="LinkedIn.png" alt="LinkedIn" class="icons">
         </a>
-        <a href=“https://github.com/peytxn”>
-            <img src=“GitHub.png” alt=“GitHub”>
+        <a href="https://github.com/peytxn">
+            <img src="GitHub.png" alt="GitHub" class="icons">
         </a>
-        <a href=“mailto:peytonblanchardbusiness@gmail.com”>
-            <img src=“Email.png” alt=“Email”>
+        <a href="mailto:peytonblanchardbusiness@gmail.com">
+            <img src="Email.png" alt="Email" class="icons">
         </a>
     </p>
-    <p>© 2025 Peyton Blanchard</p>
+    <p class="cite">© 2025 Peyton Blanchard</p>
 </footer>
 </html>
 
