@@ -12,10 +12,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1em 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
 }
 
 body {
     background-color: white;
+    padding-bottom: 130px;
 }
 
 
@@ -37,7 +40,9 @@ h2 {
 
 h3 {
     font-family: Oswald, sans-serif;
-    color: #4C4F59;
+    color: #41538a;
+    font-weight: 400;
+    font-size: 22px;
 }
 
 p {
@@ -120,6 +125,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
@@ -184,7 +190,8 @@ label {
     max-width: 350px;
     text-align: center;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 #pic-p {
@@ -199,6 +206,10 @@ label {
     margin-top: 35px;
 }
 
+#flow-pics {
+    margin-bottom: 20px;
+}
+
 .left {
     text-align: left;
 }
@@ -208,10 +219,10 @@ label {
 }
 
 .icons {
-    height: 40px;
+    height: 35px;
     width: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 12px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -315,7 +326,7 @@ label {
 }
 
 .submit-btn {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .split.right {
@@ -355,4 +366,174 @@ label {
     color: #41538a;
     transform: scale(1.02);
     font-weight: 550;
+}
+
+.project-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 85px;
+    margin-right: 50px;
+    border: 3px solid #B2C9E4;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-image:first-child {
+    margin-top: 40px;
+}
+
+.project-image:hover {
+    border-color: #41538a;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text h2 {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.project-text p {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 700px;
+}
+
+.project-button {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.figma-prototype {
+    margin: 20px 85px;
+}
+
+.figma-prototype p {
+    font-family: Merriweather, serif;
+    font-size: 17px;
+    color: #7C7F88;
+    margin: 20px 0 25px 0 !important; 
+    padding: 0;
+    text-align: left;
+    max-width: 1200px;
+}
+
+.figma-frames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 0 !important;
+}
+
+.frame {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.frame img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #B2C9E4;
+    object-fit: cover;
+}
+.frame-tall {
+    flex: 1 1 280px;
+    text-align: center;
+}
+
+.frame-tall img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #B2C9E4;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.figma-frames .caption {
+    margin: 10px 0 0 0 !important;
+    padding: 0;
+    text-align: center;
+}
+
+.first-pic {
+    float: left;
+    height: 330px;
+    width: auto;
+    margin: 65px 50px 25px 85px; 
+    border-radius: 15px;
+    border: 3px solid #B2C9E4;
+}
+
+.project-detail {
+    padding-right: 85px;
+}
+
+.project-detail h1 {
+    margin: 0;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+.project-detail h2,
+.project-detail p {
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 85px;
+    max-width: 1200px;
+}
+
+.project-detail ul  {
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 100px;
+    max-width: 1200px;
+}
+
+.project-detail li {
+    margin-top: 8px;
+    font-family: Merriweather, serif;
+    color: #7C7F88;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.after-image {
+    clear: left;
+}
+
+.site-link {
+    font-family: Merriweather, serif;
+    font-size: 17px;
+    color: #B2C9E4;
+    text-decoration: underline;
+    margin-left: 85px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 550;
+}
+
+.site-link:hover {
+    color: #41538a;
+    font-weight: 800;
 }
