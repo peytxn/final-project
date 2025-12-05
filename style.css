@@ -100,7 +100,7 @@ nav a:hover {
     background-color: #41538a;
 }
 
-button {
+.button {
     font-family: Oswald, sans-serif;
     background-color: #B2C9E4;
     color: white;
@@ -111,7 +111,7 @@ button {
     font-size: 25px;
 }
 
-button:hover {
+.button:hover {
     background-color: #41538a;
     cursor: pointer;
 }
@@ -366,6 +366,11 @@ label {
     color: #41538a;
     transform: scale(1.02);
     font-weight: 550;
+}
+
+.contact-icons {
+    width: 20px;
+    height: auto;
 }
 
 .project-image {
@@ -710,7 +715,7 @@ label {
         float: none;
     }
 
-    button,
+    .button,
     .project-button,
     .site-link {
         font-size: 18px;
@@ -741,8 +746,12 @@ label {
 
 @media (min-width: 577px) and (max-width: 768px) {
     header {
-        background-color: #bd8c43;
         padding: 0.7em 1.5em;
+    }
+
+    #logo {
+        width: 90px;
+        height: auto;
     }
 
     nav ul {
@@ -750,81 +759,269 @@ label {
     }
 
     nav a {
-        font-size: 1.4em;
+        font-size: 1.2em;
         padding: 0.2em 0.5em;
     }
 
+    #pic-p {
+        margin-top: 25px;
+    }
+
     h1 {
-        font-size: 28px;
+        font-size: 30px;
         margin-left: 40px;
         margin-top: 25px;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 22px;
         margin-left: 40px;
         margin-top: 18px;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 20px;
         margin-left: 40px;
         margin-top: 15px;
     }
 
     p {
-        font-size: 15px;
+        font-size: 16px;
         margin-left: 40px;
         margin-top: 20px;
     }
 
+    .portfolio-heading {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
     .project-text {
-        max-width: 80%;
+        max-width: 700px;
+        margin: 0;
+        margin-left: 40px;
         margin-right: 40px;
     }
-
-    .project-image,
-    .frame-tall img,
-    .frame img {
-        max-width: 90%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
+    
+    .project-text h2 {
+        font-size: 26px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .project-description {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 0;
     }
 
-    .first-pic {
+    .project-image {
         width: 80%;
-        margin: 30px auto;
-        float: none;
+        max-width: 450px;
+        height: auto;
+        margin: 0;
     }
 
-    button,
+    .button,
     .project-button,
     .site-link {
-        font-size: 20px;
-        padding: 4px 15px;
+        font-size: 22px;
+        padding: 5px 18px;
+    }
+
+    .project-button {
+        font-size: 18px;
+        padding: 8px 20px;
+        margin-bottom: 0px;
     }
 
     footer {
-        font-size: 15px;
-        padding: 10px 0;
+        padding: 8px 0;
+    }
+
+    footer .icons {
+        height: 28px;
+        width: auto;
+        margin: 12px 15px 10px 15px;
+    }
+
+    footer .cite {
+        font-size: 11px;
     }
 
     .email-shift a {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .hidden-profile summary {
-        font-size: 15px;
-        padding: 12px 18px;
+        font-size: 16px;
+        padding: 14px 18px;
     }
+
+    .about {
+        text-align: center;
+    }
+
+    .underline {
+        margin-left: 0;
+    }
+
+    .about-body {
+        margin-right: 45px;
+    }
+
+    #resume-button {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 30px;
+    }
+
+    .split {
+        flex: 1 1 100%; 
+        text-align: center;
+    }
+    
+    .project-detail {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .project-header {
+        text-align: center;
+    }
+
+    .first-pic {
+        display: block;
+        height: 280px;
+        width: auto;
+        float: none;
+        margin: 45px auto 25px auto;
+    }
+
+    .project-detail h1 {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .project-detail h1,
+    .project-detail h2,
+    .project-detail h3,
+    .project-detail p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .project-detail ul {
+        margin: 15px auto;
+        max-width: 85%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .figma-prototype {
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    max-width: 100%;
+}
+
+    .figma-prototype h3 {
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+    .figma-prototype p {
+        margin: 20px auto 25px auto !important;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .figma-frames {
+        margin: 0 auto !important;
+        padding: 0 20px !important;
+        justify-content: center;
+    }
+
+
+    .project-header {
+        margin: 10px auto 15px auto;
+        text-align: center;
+        display: block;
+    }
+
+    .project-detail h1.underline {
+        display: inline-block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .project-detail {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .project-detail a {
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    .site-link {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+    }
+
+    .hidden-profile {
+        margin: 30px auto;
+        max-width: 90%;
+    }
+
+    .subheading {
+        margin: 20px auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .subheading h3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .hidden-content p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        max-width: 95%;
+        padding: 0 15px;
+    }
+
 }
 
 /* small desktops */
 
 @media (min-width: 769px) and (max-width: 992px) {
     header {
-        background-color: #49853a;
         padding: 1em 2em;
     }
 
@@ -893,7 +1090,7 @@ label {
         margin: 0;
     }
 
-    button,
+    .button,
     .project-button,
     .site-link {
         font-size: 22px;
@@ -948,6 +1145,11 @@ label {
         margin-right: 0;
     }
 
+    .contact-icons {
+        width: 16px;
+        height: auto;
+    }
+
     #resume-button {
         margin-left: 50px;
     }
@@ -961,8 +1163,35 @@ label {
         margin-left: 45px;
     }
 
-    .project-detail {
+    .project-detail h1 {
+        margin-top: 10px;
+    }
+
+    .project-detail h1,
+    .project-detail h2,
+    .project-detail h3,
+    .project-detail p {
         margin-left: 45px;
+    }
+
+    .project-detail ul {
+        margin-left: 60px;
+    }
+
+    .figma-prototype {
+        margin: 20px 45px;
+    }
+
+    .figma-prototype h3 {
+        margin: 0;
+    }
+
+    .site-link {
+        margin-left: 45px;
+    }
+
+    .subheading {
+        margin-left: 0;
     }
 
 }
