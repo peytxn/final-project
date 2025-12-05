@@ -863,8 +863,8 @@ label {
 
     .first-pic {
         display: block;
-        width: 420px;
-        height: auto;
+        height: 240px;
+        width: auto;
         float: none;
         margin: 45px auto 25px auto;
     }
