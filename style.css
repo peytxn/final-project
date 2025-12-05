@@ -100,6 +100,28 @@ nav a:hover {
     background-color: #41538a;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+button {
+    font-family: Oswald, sans-serif;
+    background-color: #B2C9E4;
+    color: white;
+    border-radius: 50px;
+    padding: 5px 25px;
+    margin-top: 40px;
+    border-color: transparent;
+    font-size: 25px;
+    
+}
+
+button:hover {
+    background-color: #41538a;
+    cursor: pointer;
+}
+
 .button {
     font-family: Oswald, sans-serif;
     background-color: #B2C9E4;
@@ -109,12 +131,14 @@ nav a:hover {
     margin-top: 40px;
     border-color: transparent;
     font-size: 25px;
+    display: inline-block;
 }
 
 .button:hover {
     background-color: #41538a;
     cursor: pointer;
 }
+
 
 footer {
     font-family: Oswald, sans-serif;
@@ -632,114 +656,321 @@ label {
 
 @media (max-width: 576px) {
     header {
-        background-color: #772f2f;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 0.5em 1em;
+        align-items: center;
+        padding: 0;
     }
+
+    #logo {
+        width: 100px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    #logo-h1 {
+        text-align: center;
+    }
+
 
     nav {
         width: 100%;
-        text-align: left;
-        margin: 0;
+        text-align: center;
+        margin: 10px 0 0 0;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 0;
         border: none;
+        border-radius: 0;
         padding: 0;
+        align-items: stretch;
+        width: 100%;
+        background-color: transparent;
+        border-top: 2px solid #B2C9E4;
+        border-bottom: 2px solid #B2C9E4;
     }
 
     nav li {
         border: none;
+        border-bottom: 2px solid #B2C9E4;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
     }
 
     nav a {
+        display: block;
+        width: 100%;
         font-size: 1.2em;
-        padding: 0.2em 0.4em;
+        padding: 12px 0;
+        border-radius: 0;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #41538a;
+    }
+
+    footer {
+        padding: 8px 0;
+    }
+
+    footer .icons {
+        height: 25px;
+        width: auto;
+        margin: 10px 12px 8px 12px;
+    }
+
+    footer .cite {
+        font-size: 11px;
+    }
+
+    #pic-p {
+        margin-top: 5px;
     }
 
     h1 {
-        font-size: 25px;
-        margin-left: 20px;
-        margin-top: 20px;
+        font-size: 30px;
+        margin-left: 40px;
+        margin-top: 25px;
     }
 
     h2 {
-        font-size: 18px;
-        margin-left: 20px;
-        margin-top: 15px;
+        font-size: 22px;
+        margin-left: 40px;
+        margin-top: 18px;
     }
 
     h3 {
-        font-size: 16px;
-        margin-left: 20px;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 15px;
     }
 
     p {
-        font-size: 14px;
-        margin-left: 20px;
-        margin-top: 15px;
+        font-size: 16px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .portfolio-heading {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .project-text {
+        max-width: 700px;
+        margin: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .project-text h2 {
+        font-size: 26px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .project-description {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+    .project-image {
+        width: 80%;
+        max-width: 450px;
+        height: auto;
+        margin: 0;
+    }
+
+    button,
+    .button,
+    .project-button,
+    .site-link {
+        font-size: 22px;
+        padding: 5px 18px;
+    }
+
+    .project-button {
+        font-size: 18px;
+        padding: 8px 20px;
+        margin-bottom: 0px;
+    }
+
+    .email-shift a {
+        font-size: 17px;
+    }
+
+    .hidden-profile summary {
+        font-size: 16px;
+        padding: 14px 18px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .underline {
+        margin-left: 0;
+    }
+
+    .about-body {
+        margin-right: 45px;
+    }
+
+    #resume-button {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 30px;
+    }
+
+    .split {
+        flex: 1 1 100%; 
+        text-align: center;
+    }
+    
+    .project-detail {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .project-header {
+        text-align: center;
+    }
+
+    .first-pic {
+        display: block;
+        width: 420px;
+        height: auto;
+        float: none;
+        margin: 45px auto 25px auto;
+    }
+
+    .project-detail h1 {
+        margin: 10px auto;
+        text-align: center;
     }
 
     .project-detail h1,
     .project-detail h2,
     .project-detail h3,
-    .project-detail p,
-    .project-detail ul,
-    .project-detail li {
-        margin-left: 20px;
+    .project-detail p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 90%;
     }
 
-    .project-text {
-        max-width: 100%;
-        margin-right: 20px;
+    .project-detail ul {
+        margin: 15px auto;
+        max-width: 85%;
+        text-align: left;
+        padding-left: 20px;
     }
 
-    .project-image,
-    .frame-tall img,
-    .frame img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-right: 0;
+    .figma-prototype {
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    max-width: 100%;
+}
+
+    .figma-prototype h3 {
+        margin: 0 auto !important;
+        text-align: center;
     }
 
-    .first-pic {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-        float: none;
+    .figma-prototype p {
+        margin: 20px auto 25px auto !important;
+        text-align: center;
+        max-width: 90%;
     }
 
-    .button,
-    .project-button,
+    .figma-frames {
+        margin: 0 auto !important;
+        padding: 0 20px !important;
+        justify-content: center;
+    }
+
+
+    .project-header {
+        margin: 10px auto 15px auto;
+        text-align: center;
+        display: block;
+    }
+
+    .project-detail h1.underline {
+        display: inline-block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .project-detail {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .project-detail a {
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
     .site-link {
-        font-size: 18px;
-        padding: 4px 12px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
     }
 
-    footer {
-        font-size: 14px;
-        padding: 8px 0;
+    .hidden-profile {
+        margin: 30px auto;
+        max-width: 90%;
     }
 
-    .email-shift a {
-        font-size: 14px;
+    .subheading {
+        margin: 20px auto;
+        text-align: center;
+        max-width: 90%;
     }
 
-    .hidden-profile summary {
-        font-size: 14px;
-        padding: 10px 15px;
+    .subheading h3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
-    .hidden-content {
-        margin-left: 0;
-        margin-right: 0;
+    .hidden-content p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        max-width: 95%;
+        padding: 0 15px;
     }
+    
 }
 
 /* tablets */
@@ -832,6 +1063,7 @@ label {
         margin: 0;
     }
 
+    button,
     .button,
     .project-button,
     .site-link {
@@ -1090,6 +1322,7 @@ label {
         margin: 0;
     }
 
+    button,
     .button,
     .project-button,
     .site-link {
