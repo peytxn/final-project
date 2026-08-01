@@ -234,6 +234,10 @@ label {
     margin-bottom: 20px;
 }
 
+#name {
+    font-size: 20px;
+}
+
 .left {
     text-align: left;
 }
